@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRNewAssetNameViewController">
+            <connections>
+                <outlet property="assetName" destination="ugv-dO-vJO" id="dZy-xj-fCJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugv-dO-vJO">
+                    <rect key="frame" x="38" y="175" width="299" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJW-4O-sma">
+                    <rect key="frame" x="160" y="232" width="57" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="C8y-yG-x1Y"/>
+                        <constraint firstAttribute="width" constant="57" id="xQB-As-UfV"/>
+                    </constraints>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchUpInside" id="ztT-lX-E0d"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Asset Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boB-zn-JYW">
+                    <rect key="frame" x="84" y="118" width="207" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fJW-4O-sma" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1dM-ie-5HM"/>
+                <constraint firstItem="boB-zn-JYW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="118" id="2GA-lE-DOK"/>
+                <constraint firstItem="ugv-dO-vJO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DbG-7Q-6B5"/>
+                <constraint firstAttribute="trailing" secondItem="boB-zn-JYW" secondAttribute="trailing" constant="84" id="GYO-cA-RK8"/>
+                <constraint firstItem="boB-zn-JYW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="84" id="J10-UH-7fe"/>
+                <constraint firstAttribute="trailing" secondItem="ugv-dO-vJO" secondAttribute="trailing" constant="38" id="OuA-gn-XKY"/>
+                <constraint firstItem="ugv-dO-vJO" firstAttribute="top" secondItem="boB-zn-JYW" secondAttribute="bottom" constant="36" id="QRh-Vq-iaa"/>
+                <constraint firstItem="ugv-dO-vJO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="ede-zG-Zfj"/>
+                <constraint firstItem="fJW-4O-sma" firstAttribute="top" secondItem="ugv-dO-vJO" secondAttribute="bottom" constant="27" id="fLP-Zv-NWS"/>
+                <constraint firstItem="boB-zn-JYW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n9M-Nk-9u3"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="33.5" y="-265.5"/>
+        </view>
+    </objects>
+</document>
