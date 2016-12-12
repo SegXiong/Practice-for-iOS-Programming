@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mkw-fh-0E0" customClass="BNRCoursesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mkw-fh-0E0" id="hnK-KR-pfW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzr-Bv-aAL">
+                        <rect key="frame" x="18" y="25" width="42" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdx-1z-xZ6">
+                        <rect key="frame" x="18" y="0.0" width="42" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Hzr-Bv-aAL" secondAttribute="trailing" constant="315" id="4Wk-vU-w0c"/>
+                    <constraint firstAttribute="bottom" secondItem="Hzr-Bv-aAL" secondAttribute="bottom" id="4wa-jD-ePg"/>
+                    <constraint firstItem="Hzr-Bv-aAL" firstAttribute="top" secondItem="rdx-1z-xZ6" secondAttribute="bottom" id="GG1-Bc-JOr"/>
+                    <constraint firstItem="rdx-1z-xZ6" firstAttribute="leading" secondItem="hnK-KR-pfW" secondAttribute="leading" constant="18" id="WRk-em-M16"/>
+                    <constraint firstAttribute="trailing" secondItem="rdx-1z-xZ6" secondAttribute="trailing" constant="315" id="b1F-II-eGU"/>
+                    <constraint firstItem="Hzr-Bv-aAL" firstAttribute="leading" secondItem="hnK-KR-pfW" secondAttribute="leading" constant="18" id="hUF-13-s3S"/>
+                    <constraint firstItem="rdx-1z-xZ6" firstAttribute="top" secondItem="hnK-KR-pfW" secondAttribute="top" id="tGe-JD-7N4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="rdx-1z-xZ6" id="cGu-dy-sE5"/>
+                <outlet property="nextStartDayLabel" destination="Hzr-Bv-aAL" id="164-dz-Crw"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="80"/>
+        </tableViewCell>
+    </objects>
+</document>
