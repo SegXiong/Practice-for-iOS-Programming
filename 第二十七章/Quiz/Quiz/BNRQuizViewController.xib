@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRQuizViewController">
+            <connections>
+                <outlet property="answerLable" destination="Ldi-8q-CA7" id="P8V-3E-eKR"/>
+                <outlet property="questionLable" destination="PaR-Cb-B0x" id="eo6-eV-Ggq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaR-Cb-B0x">
+                    <rect key="frame" x="23" y="50" width="329" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="crJ-3L-WUV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldi-8q-CA7">
+                    <rect key="frame" x="23" y="306" width="329" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iS5-h6-8YA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFl-qi-1EI">
+                    <rect key="frame" x="23" y="100" width="329" height="47"/>
+                    <color key="backgroundColor" red="1" green="0.59621836649171034" blue="0.32740563480349427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="GXs-0f-AE3"/>
+                    </constraints>
+                    <state key="normal" title="Show Question"/>
+                    <connections>
+                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="hvs-YZ-SuF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6w-H9-6UP">
+                    <rect key="frame" x="23" y="354" width="329" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.59621836649171034" blue="0.32740563480349427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="snd-Zs-Y3E"/>
+                    </constraints>
+                    <state key="normal" title="Show Answer"/>
+                    <connections>
+                        <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="Yi1-9N-YVU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ldi-8q-CA7" firstAttribute="leading" secondItem="iFl-qi-1EI" secondAttribute="leading" id="0oK-ea-VG7"/>
+                <constraint firstItem="PaR-Cb-B0x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="NRj-ZR-Hzs"/>
+                <constraint firstItem="B6w-H9-6UP" firstAttribute="top" secondItem="Ldi-8q-CA7" secondAttribute="bottom" constant="8" id="Rb2-Af-HVA"/>
+                <constraint firstItem="Ldi-8q-CA7" firstAttribute="trailing" secondItem="iFl-qi-1EI" secondAttribute="trailing" id="RhN-bh-Igd"/>
+                <constraint firstItem="iFl-qi-1EI" firstAttribute="width" secondItem="PaR-Cb-B0x" secondAttribute="width" id="Rms-sO-g4Q"/>
+                <constraint firstItem="B6w-H9-6UP" firstAttribute="leading" secondItem="Ldi-8q-CA7" secondAttribute="leading" id="Tth-AK-54l"/>
+                <constraint firstItem="Ldi-8q-CA7" firstAttribute="top" secondItem="iFl-qi-1EI" secondAttribute="bottom" constant="159" id="eRn-Cl-IpM"/>
+                <constraint firstItem="B6w-H9-6UP" firstAttribute="trailing" secondItem="Ldi-8q-CA7" secondAttribute="trailing" id="kce-3e-3zc"/>
+                <constraint firstItem="PaR-Cb-B0x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="mIW-Az-4dj"/>
+                <constraint firstItem="iFl-qi-1EI" firstAttribute="top" secondItem="PaR-Cb-B0x" secondAttribute="bottom" constant="10" id="rAN-kU-PNV"/>
+                <constraint firstAttribute="trailing" secondItem="PaR-Cb-B0x" secondAttribute="trailing" constant="23" id="v0a-nM-LLh"/>
+                <constraint firstItem="iFl-qi-1EI" firstAttribute="leading" secondItem="PaR-Cb-B0x" secondAttribute="leading" id="vFt-6a-gJx"/>
+            </constraints>
+            <point key="canvasLocation" x="27.5" y="50.5"/>
+        </view>
+    </objects>
+</document>
